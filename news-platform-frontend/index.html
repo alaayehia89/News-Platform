@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنصة الإخبارية الشاملة - الرئيسية</title>
+    <meta name="description" content="تابع أحدث الأخبار المحلية والعالمية على مدار الساعة">
+    
+    <!-- خط تجوال من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ملف الـ CSS الرئيسي -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+    <!-- الهيدر العلوي -->
+    <header>
+        <!-- الشريط العلوي -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="date-display">
+                    <span id="current-date"></span>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="فيسبوك">📘</a>
+                    <a href="#" aria-label="تويتر">🐦</a>
+                    <a href="#" aria-label="انستغرام">📷</a>
+                    <a href="#" aria-label="يوتيوب">📺</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- الهيدر الرئيسي -->
+        <div class="main-header">
+            <div class="container">
+                <!-- الشعار -->
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="شعار المنصة الإخبارية" onerror="this.style.display='none'">
+                    <h1>المنصة الإخبارية</h1>
+                </div>
+                
+                <!-- نموذج البحث -->
+                <form class="search-form" role="search">
+                    <input type="text" placeholder="ابحث عن خبر..." aria-label="بحث">
+                    <button type="submit">🔍 بحث</button>
+                </form>
+                
+                <!-- أزرار الإجراءات -->
+                <div class="header-actions">
+                    <a href="pages/login.html" class="btn btn-outline login-btn">تسجيل الدخول</a>
+                    <a href="pages/register.html" class="btn btn-primary register-btn">حساب جديد</a>
+                    <div class="user-menu" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- شريط التنقل -->
+        <nav class="main-nav">
+            <div class="container">
+                <button class="mobile-menu-btn" aria-label="القائمة">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="pages/politics.html">سياسة</a></li>
+                    <li><a href="pages/economy.html">اقتصاد</a></li>
+                    <li><a href="pages/sports.html">رياضة</a></li>
+                    <li><a href="pages/technology.html">تكنولوجيا</a></li>
+                    <li><a href="pages/culture.html">ثقافة</a></li>
+                    <li><a href="pages/health.html">صحة</a></li>
+                    <li><a href="pages/varieties.html">منوعات</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- شريط الأخبار العاجلة -->
+        <div class="breaking-news-bar">
+            <div class="container">
+                <span class="breaking-label">عاجل</span>
+                <div class="breaking-news-ticker">
+                    <div class="ticker-content">
+                        <!-- سيتم تحميل الأخبار العاجلة هنا بواسطة JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <div class="container">
+            <!-- قسم الأخبار المميزة -->
+            <section class="featured-section">
+                <div class="section-header">
+                    <h2>أبرز الأخبار</h2>
+                </div>
+                <div class="featured-grid">
+                    <!-- سيتم تحميل المحتوى بواسطة JavaScript -->
+                </div>
+            </section>
+            
+            <!-- آخر الأخبار -->
+            <section class="news-section latest-news">
+                <div class="section-header">
+                    <h2>آخر الأخبار</h2>
+                    <a href="pages/all-news.html" class="view-all">عرض الكل ←</a>
+                </div>
+                <div class="content-with-sidebar">
+                    <div class="news-grid">
+                        <!-- سيتم تحميل الأخبار بواسطة JavaScript -->
+                    </div>
+                    
+                    <!-- الشريط الجانبي -->
+                    <aside class="sidebar">
+                        <!-- الأكثر قراءة -->
+                        <div class="sidebar-widget">
+                            <h3>الأكثر قراءة</h3>
+                            <div class="most-read-list">
+                                <!-- سيتم تحميل القائمة بواسطة JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <!-- النشرة البريدية -->
+                        <div class="sidebar-widget">
+                            <h3>النشرة البريدية</h3>
+                            <p style="margin-bottom: 15px; color: var(--text-light);">اشترك في نشرتنا البريدية للحصول على آخر الأخبار</p>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="بريدك الإلكتروني" required>
+                                <button type="submit">اشترك الآن</button>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المنصة</h3>
+                    <p style="color: #d1d5db; line-height: 1.8;">
+                        منصة إخبارية شاملة تقدم تغطية محلية وعالمية على مدار الساعة، 
+                        مع التزام بالمصداقية والموضوعية.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>أقسام الموقع</h3>
+                    <ul>
+                        <li><a href="#">سياسة</a></li>
+                        <li><a href="#">اقتصاد</a></li>
+                        <li><a href="#">رياضة</a></li>
+                        <li><a href="#">تكنولوجيا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط هامة</h3>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <ul>
+                        <li>📧 info@newsplatform.com</li>
+                        <li>📱 +966 50 000 0000</li>
+                        <li>📍 الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة © 2025 المنصة الإخبارية</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ملف الجافاسكربت الرئيسي -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

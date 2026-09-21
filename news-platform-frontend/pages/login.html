@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - المنصة الإخبارية</title>
+    <meta name="description" content="سجل الدخول إلى حسابك لمتابعة آخر الأخبار">
+    
+    <!-- خط تجوال من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ملفات الـ CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+<body>
+    <!-- الهيدر المبسط -->
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+                        <h1 style="color: var(--primary-color); font-size: 1.8rem;">المنصة الإخبارية</h1>
+                    </a>
+                </div>
+                <a href="../index.html" class="btn btn-outline">← العودة للرئيسية</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- نموذج تسجيل الدخول -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h1>تسجيل الدخول</h1>
+                <p>مرحباً بك! يرجى إدخال بياناتك لتسجيل الدخول</p>
+            </div>
+            
+            <div id="alert-container"></div>
+            
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <div class="password-toggle">
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <button type="button" onclick="togglePassword('password')" aria-label="إظهار كلمة المرور">👁️</button>
+                    </div>
+                </div>
+                
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center; flex-direction: row;">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">تذكرني</label>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">نسيت كلمة المرور؟</a>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-submit">تسجيل الدخول</button>
+            </form>
+            
+            <div class="auth-divider">
+                <span>أو</span>
+            </div>
+            
+            <div class="social-auth">
+                <button class="social-btn" type="button">
+                    <span>🔵</span> جوجل
+                </button>
+                <button class="social-btn" type="button">
+                    <span>📘</span> فيسبوك
+                </button>
+            </div>
+            
+            <div class="auth-footer">
+                <p>ليس لديك حساب؟ <a href="register.html">إنشاء حساب جديد</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- الفوتر المبسط -->
+    <footer style="margin-top: auto;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة © 2025 المنصة الإخبارية</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ملف الجافاسكربت -->
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>
