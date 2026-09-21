@@ -1,5 +1,8 @@
 ```
-# Database files
-*.db-shm
-*.db-wal
+# Logs
+*.log
+
+# Database temporary files
+**/database/*.db-shm
+**/database/*.db-wal
 ```

@@ -1,6 +1,10 @@
-nohup: ignoring input
+
+> news-platform-backend@1.0.0 start
+> node server.js
+
 ◇ injected env (5) from .env
 ✅ تم الاتصال بقاعدة البيانات SQLite بنجاح (WAL Mode Enabled).
 ✅ تم التحقق من الجداول وإنشاؤها إذا لم تكن موجودة.
 ✅ تم التأكد من وجود الأدوار الأساسية (Admin, Editor, Reporter, User) في قاعدة البيانات.
 ✅ الخادم يعمل على المنفذ: http://localhost:3000
+=== تشخيص: قيمة JWT_SECRET هي ===> my_super_secret_key_12345_change_this_later
