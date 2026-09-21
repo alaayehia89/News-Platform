@@ -10,6 +10,10 @@ const rateLimit = require('express-rate-limit');
 const compression = require('compression');
 const path = require('path');
 const authRoutes = require('./routes/authRoutes');
+const articleRoutes = require('./routes/articleRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
+const commentRoutes = require('./routes/commentRoutes');
+const mediaRoutes = require('./routes/mediaRoutes');
 
 // ➕ استيراد معالج الأخطاء العام
 const errorHandler = require('./middlewares/errorHandler');
@@ -60,6 +64,10 @@ app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 // 5. مسارات الـ APIs
 // ========================================================
 app.use('/api/v1/auth', authRoutes);
+app.use('/api/v1/articles', articleRoutes);
+app.use('/api/v1/categories', categoryRoutes);
+app.use('/api/v1/comments', commentRoutes);
+app.use('/api/v1/media', mediaRoutes);
 
 // رسالة تجريبية للتأكد من عمل الخادم
 app.get('/', (req, res) => {
