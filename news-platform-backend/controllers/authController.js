@@ -55,18 +55,15 @@ exports.register = async (req, res, next) => {
 // ========================================================
 // 2. تسجيل الدخول (Login)
 // ========================================================
-   exports.login = async (req, res, next) => {
-       try {
-           const { email, password } = req.body;
+exports.login = async (req, res, next) => {
+    try {
+        const { email, password } = req.body;
 
-           // ➕ أضف هذا السطر للتشخيص
-           console.log("=== تشخيص: قيمة JWT_SECRET هي ===>", process.env.JWT_SECRET);
+        const user = UserModel.findByEmail(email);
+        if (!user) {
+            return res.status(401).json({ error: 'البريد الإلكتروني أو كلمة المرور غير صحيحة.' });
+        }
 
-           const user = UserModel.findByEmail(email);
-           if (!user) {
-               return res.status(401).json({ error: 'البريد الإلكتروني أو كلمة المرور غير صحيحة.' });
-           }
-           // ... باقي الكود كما هو
         // التحقق من حالة الحساب
         if (user.status !== 'active') {
             return res.status(403).json({ error: 'الحساب معلق أو غير نشط. يرجى التواصل مع الإدارة.' });
