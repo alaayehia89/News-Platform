@@ -1,12 +1,9 @@
 ```
-# Dependencies
-node_modules/
+# Logs and temp files
+*.log
+server.log
 
-# Database files
-*.db
-*.db-shm
-*.db-wal
-
-# Package lock files
-package-lock.json
+# Database temporary files
+**/*.db-shm
+**/*.db-wal
 ```
