@@ -1,0 +1,6 @@
+nohup: ignoring input
+◇ injected env (5) from .env
+✅ تم الاتصال بقاعدة البيانات SQLite بنجاح (WAL Mode Enabled).
+✅ تم التحقق من الجداول وإنشاؤها إذا لم تكن موجودة.
+✅ تم التأكد من وجود الأدوار الأساسية (Admin, Editor, Reporter, User) في قاعدة البيانات.
+✅ الخادم يعمل على المنفذ: http://localhost:3000
